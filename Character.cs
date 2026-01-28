@@ -12,9 +12,6 @@ namespace Olio_ohjelmointi_projekti
         public int Health { get; set; }
         public int AttackPower { get; set; }
 
-        public bool IsAlive => Health > 0;
-
-
         public Character(string name, int maxHealth, int attackPower)
         {
             Name = name;
@@ -28,6 +25,10 @@ namespace Olio_ohjelmointi_projekti
             Health -= damage;
             if (Health < 0)
                 Health = 0;
+        }
+        public bool IsAlive()
+        {
+            return Health > 0;
         }
     }
 }
