@@ -1,23 +1,27 @@
-﻿using System;
+﻿using Olio_ohjelmointi_projekti.Shop;
+using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace Olio_ohjelmointi_projekti
 {
     class Game
     {
-        private Player player;
-        private bool isRunning = true;
+        private Player _player;
+        private Store _store;
+        private bool _isRunning = true;
 
         public void Start()
         {
             Console.Write("What will be your hero's name?: ");
             string name = Console.ReadLine();
-            player = new Player(name);
+            _player = new Player(name);
+            _store = new Store();
 
-            Console.WriteLine($"Welcome, {player.Name}!");
+            Console.WriteLine($"Welcome, {_player.Name}!");
 
-            while (isRunning)
+            while (_isRunning)
             {
                 ShowMainMenu();
             }
@@ -39,14 +43,14 @@ namespace Olio_ohjelmointi_projekti
                     //StartBattle();
                     break;
                 case "2":
-                    //OpenShop();
+                    _store.Open(_player);
                     break;
                 case "3":
-                    player.Inventory.ShowItems();
+                    _player.Inventory.ShowItems();
                     break;
                 case "4":
-                    isRunning = false;
                     Console.WriteLine("Thank you for playing!");
+                    _isRunning = false;
                     break;
                 default:
                     Console.WriteLine("Select from the above.");

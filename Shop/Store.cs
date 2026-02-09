@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Olio_ohjelmointi_projekti.Shop
 {
-    public class Shop
+    public class Store
     {
         public void Open(Player player)
         {
@@ -13,20 +13,24 @@ namespace Olio_ohjelmointi_projekti.Shop
             while (inShop)
             {
                 Console.WriteLine("\n=== SHOP ===");
+                Console.WriteLine($"You have {player.Coins} coins");
                 Console.WriteLine("1 = Health potion");
                 Console.WriteLine("2 = Goblin slayer");
                 Console.WriteLine("3 = Exit");
 
+                Potion potion = new Potion("Health potion");
+                Sword sword = new Sword("Goblin slayer", 18);
+
                 string choice = Console.ReadLine();
 
-                if (choice == "1")
+                if (choice == "1" && player.Coins >= potion.Price)
                 {
-                    player.Inventory.AddItem(new Potion("Parannusjuoma"));
+                    player.Inventory.AddItem(potion);
                     Console.WriteLine("Thank you for your purchase");
                 }
-                if (choice == "2")
+                else if (choice == "2" && player.Coins >= sword.Price)
                 {
-                    player.Inventory.AddItem(new Sword("Goblin slayer", 18));
+                    player.Inventory.AddItem(sword);
                     Console.WriteLine("Thank you for your purchase");
                 }
                 else if (choice == "3")

@@ -42,11 +42,18 @@ namespace Olio_ohjelmointi_projekti
                     return;
                 }
 
-                if (item.Name == "Health potion")
+                else if (item.Name == "Health potion")
                 {
                     Health += 30;
-                    if (Health > 100) Health = 100;
-                    Console.WriteLine("Käytit parannusjuoman (+30 HP).");
+                    if (Health > MaxHealth) Health = MaxHealth;
+                    Console.WriteLine($"{Name} used a health potion (+30 HP).");
+                }
+                else if (item.Name == "Goblin slayer")
+                {
+                    Sword sword = new Sword("Goblin slayer", 18);
+                    int DamagePlus = sword.Damage - AttackPower;
+                    AttackPower += DamagePlus;
+                    Console.WriteLine($"You equipped the Goblin slayer.");
                 }
             }
         }

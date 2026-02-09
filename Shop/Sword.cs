@@ -10,7 +10,7 @@ namespace Olio_ohjelmointi_projekti.Shop
 
         public Sword(string name, int damage) : base (name, 100)
         {
-             
+             Damage = damage;
         }
     }
 }
