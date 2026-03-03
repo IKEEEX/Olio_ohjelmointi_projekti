@@ -37,6 +37,10 @@ namespace Olio_ohjelmointi_projekti.Shop
                 {
                     inShop = false;
                 }
+                else
+                {
+                    Console.WriteLine("Insufficient coins");
+                }
             }
         }
     }

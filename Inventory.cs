@@ -7,7 +7,7 @@ namespace Olio_ohjelmointi_projekti
 {
     public class Inventory
     {
-        private List<Item> items = new List<Item>();
+        public List<Item> items = new List<Item>();
 
         public void AddItem(Item item)
         {
@@ -36,6 +36,10 @@ namespace Olio_ohjelmointi_projekti
             Item item = items[index];
             items.RemoveAt(index);
             return item;
+        }
+        public void RemoveItem(Item item)
+        {
+            items.Remove(item);
         }
     }
 }
