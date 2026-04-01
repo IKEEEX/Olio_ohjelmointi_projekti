@@ -47,21 +47,24 @@ namespace Olio_ohjelmointi_projekti
             Health = MaxHealth;
             Console.WriteLine($"{Name} reached a new level: {Level}!");
         }
-        public void UseHealthPotion()
+        public bool UseFirstPotion()
         {
             Item potion = Inventory.items.FirstOrDefault(i => i is Potion && i.Name == "Health potion");
 
             if (potion == null)
             {
                 Console.WriteLine("No health potion in inventory!");
-                return;
+                return false;
             }
 
-            Health += 30;
-            if (Health > MaxHealth) Health = MaxHealth;
-            Console.WriteLine($"{Name} used a health potion (+30 HP).");
+            if (potion is Shop.IUsable usable)
+            {
+                usable.Use(this);
+                Inventory.RemoveItem(potion);
+                return true;
+            }
 
-            Inventory.RemoveItem(potion);
+            return false;
         }
         public void UseItem()
         {

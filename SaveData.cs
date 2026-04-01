@@ -104,20 +104,8 @@ namespace Olio_ohjelmointi_projekti
                 player = new Player(pd.Name);
 
                 player.Level = pd.Level;
-                
-                var expProp = typeof(Player).GetProperty("Experience", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Public);
-                var expSetter = expProp?.GetSetMethod(true);
-                if (expSetter != null)
-                {
-                    expSetter.Invoke(player, new object[] { pd.Experience });
-                }
-
-                var expToNext = typeof(Player).GetProperty("ExperienceToNextLevel", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Public);
-                var expToNextSetter = expToNext?.GetSetMethod(true);
-                if (expToNextSetter != null)
-                {
-                    expToNextSetter.Invoke(player, new object[] { pd.ExperienceToNextLevel });
-                }
+                player.Experience = pd.Experience;
+                player.ExperienceToNextLevel = pd.ExperienceToNextLevel;
 
                 player.Coins = pd.Coins;
                 player.Health = pd.Health;

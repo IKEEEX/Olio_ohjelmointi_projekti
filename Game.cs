@@ -65,8 +65,8 @@ namespace Olio_ohjelmointi_projekti
                 }
                 else if (choice == "2")
                 {
-                    _player.UseHealthPotion();
-                    Console.WriteLine("You used a health potion");
+                    if (_player.UseFirstPotion())
+                        Console.WriteLine("You used a health potion");
                 }
                 else if (choice == "3")
                 {
