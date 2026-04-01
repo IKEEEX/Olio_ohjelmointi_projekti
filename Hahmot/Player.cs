@@ -57,7 +57,7 @@ namespace Olio_ohjelmointi_projekti.Hahmot
                 return false;
             }
 
-            if (potion is Shop.IUsable usable)
+            if (potion is Kauppa.IUsable usable)
             {
                 usable.Use(this);
                 Inventory.RemoveItem(potion);
@@ -81,11 +81,11 @@ namespace Olio_ohjelmointi_projekti.Hahmot
                     return;
                 }
 
-                if (item is Shop.IUsable usable)
+                if (item is Kauppa.IUsable usable)
                 {
                     usable.Use(this);
                 }
-                else if (item is Shop.IEquippable equippable)
+                else if (item is Kauppa.IEquippable equippable)
                 {
                     equippable.Equip(this);
                 }

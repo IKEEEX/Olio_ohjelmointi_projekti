@@ -64,12 +64,12 @@ namespace Olio_ohjelmointi_projekti.Peli
                     Price = item.Price
                 };
 
-                if (item is Shop.Potion potion)
+                if (item is Kauppa.Potion potion)
                 {
                     id.Type = "Potion";
                     id.HealAmount = potion.HealAmount;
                 }
-                else if (item is Shop.Sword sword)
+                else if (item is Kauppa.Sword sword)
                 {
                     id.Type = "Sword";
                     id.Damage = sword.Damage;
@@ -118,17 +118,17 @@ namespace Olio_ohjelmointi_projekti.Peli
                 {
                     if (id.Type == "Potion")
                     {
-                        var p = new Shop.Potion(id.Name) { HealAmount = id.HealAmount };
+                        var p = new Kauppa.Potion(id.Name) { HealAmount = id.HealAmount };
                         player.Inventory.AddItem(p);
                     }
                     else if (id.Type == "Sword")
                     {
-                        var s = new Shop.Sword(id.Name, id.Damage);
+                        var s = new Kauppa.Sword(id.Name, id.Damage);
                         player.Inventory.AddItem(s);
                     }
                     else
                     {
-                        var it = new Shop.Item(id.Name, id.Price);
+                        var it = new Kauppa.Item(id.Name, id.Price);
                         player.Inventory.AddItem(it);
                     }
                 }
