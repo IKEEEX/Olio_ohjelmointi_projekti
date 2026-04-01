@@ -2,14 +2,15 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Olio_ohjelmointi_projekti
 {
     public class Player : Character
     {
         public int Level { get; set; }
-        public int Experience { get; private set; }
-        public int ExperienceToNextLevel { get; private set; }
+        public int Experience { get; set; }
+        public int ExperienceToNextLevel { get; set; }
         public int Coins { get; set; }
         public Inventory Inventory { get; private set; }
 
@@ -77,16 +78,13 @@ namespace Olio_ohjelmointi_projekti
                     return;
                 }
 
-                else if (item is Potion)
+                if (item is Shop.IUsable usable)
                 {
-                    Health += 30;
-                    if (Health > MaxHealth) Health = MaxHealth;
-                    Console.WriteLine($"{Name} used a health potion (+30 HP).");
+                    usable.Use(this);
                 }
-                else if (item is Sword sword)
+                else if (item is Shop.IEquippable equippable)
                 {
-                    AttackPower = sword.Damage;
-                    Console.WriteLine($"You equipped {sword.Name}.");
+                    equippable.Equip(this);
                 }
             }
         }

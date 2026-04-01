@@ -21,7 +21,7 @@ namespace Olio_ohjelmointi_projekti
             _player = new Player(name);
             _store = new Store();
 
-            Console.WriteLine($"Welcome, {_player.Name}!");
+            Console.WriteLine($"Welcome to the journey, {_player.Name}!");
 
             while (_isRunning)
             {
@@ -97,7 +97,9 @@ namespace Olio_ohjelmointi_projekti
             Console.WriteLine("1 = Search for a battle");
             Console.WriteLine("2 = Travel to the shop");
             Console.WriteLine("3 = Show inventory");
-            Console.WriteLine("4 = Exit");
+            Console.WriteLine("4 = Save game");
+            Console.WriteLine("5 = Load game");
+            Console.WriteLine("6 = Exit");
 
             string choice = Console.ReadLine();
 
@@ -113,6 +115,22 @@ namespace Olio_ohjelmointi_projekti
                     _player.Inventory.ShowItems();
                     break;
                 case "4":
+                    SaveLoad.Save(_player, _enemyLevel);
+                    Console.WriteLine("Game saved.");
+                    break;
+                case "5":
+                    if (SaveLoad.Load(out var loadedPlayer, out var loadedEnemyLevel))
+                    {
+                        _player = loadedPlayer;
+                        _enemyLevel = loadedEnemyLevel;
+                        Console.WriteLine("Game loaded.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("No save file found or failed to load.");
+                    }
+                    break;
+                case "6":
                     Console.WriteLine("Thank you for playing!");
                     _isRunning = false;
                     Environment.Exit(0);

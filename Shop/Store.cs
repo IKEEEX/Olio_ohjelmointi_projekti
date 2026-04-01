@@ -27,11 +27,13 @@ namespace Olio_ohjelmointi_projekti.Shop
                 {
                     player.Inventory.AddItem(potion);
                     Console.WriteLine("Thank you for your purchase");
+                    player.Coins -= potion.Price;
                 }
                 else if (choice == "2" && player.Coins >= sword.Price)
                 {
                     player.Inventory.AddItem(sword);
                     Console.WriteLine("Thank you for your purchase");
+                    player.Coins -= sword.Price;
                 }
                 else if (choice == "3")
                 {
