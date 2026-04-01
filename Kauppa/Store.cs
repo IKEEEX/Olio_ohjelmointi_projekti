@@ -13,14 +13,15 @@ namespace Olio_ohjelmointi_projekti.Kauppa
 
             while (inShop)
             {
-                Console.WriteLine("\n=== SHOP ===");
-                Console.WriteLine($"You have {player.Coins} coins");
-                Console.WriteLine("1 = Health potion");
-                Console.WriteLine("2 = Goblin slayer");
-                Console.WriteLine("3 = Exit");
 
                 Potion potion = new Potion("Health potion");
                 Sword sword = new Sword("Goblin slayer", 18);
+
+                Console.WriteLine("\n=== SHOP ===");
+                Console.WriteLine($"You have {player.Coins} coins");
+                Console.WriteLine($"1 = Health potion {potion.Price}");
+                Console.WriteLine($"2 = Goblin slayer {sword.Price}");
+                Console.WriteLine("3 = Exit");
 
                 string choice = Console.ReadLine();
 
