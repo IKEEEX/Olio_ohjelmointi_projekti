@@ -40,7 +40,7 @@ namespace Olio_ohjelmointi_projekti
         {
             Enemy enemy = GenerateEnemy();
 
-            Console.WriteLine($"\nA wild {enemy.Name} (Level {enemy.Level}) appears!");
+            Console.WriteLine($"\nA {enemy.Name} (Level {enemy.Level}) appears!");
 
             while (enemy.IsAlive() && _player.IsAlive())
             {
