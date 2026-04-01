@@ -115,6 +115,7 @@ namespace Olio_ohjelmointi_projekti
                 case "4":
                     Console.WriteLine("Thank you for playing!");
                     _isRunning = false;
+                    Environment.Exit(0);
                     break;
                 default:
                     Console.WriteLine("Select from the above.");

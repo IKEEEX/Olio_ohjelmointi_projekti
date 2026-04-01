@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Olio_ohjelmointi_projekti.Character">
-    <Position X="4.25" Y="6.5" Width="1.5" />
+    <Position X="4.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAACAAAAAAACAAAAAAACAQAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>AQAACAAAAAAACAAAAAAACAQAAIAAAAAAAAQAgAAAAAA=</HashCode>
       <FileName>Character.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Olio_ohjelmointi_projekti.Enemy">
     <Position X="5.75" Y="9" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEBAAAAAAAAAAA=</HashCode>
       <FileName>Enemy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Olio_ohjelmointi_projekti.Player">
     <Position X="2.75" Y="9" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAQAAAAAAAAAAAAACAABAAAAAAABAAAAAgAAAAA=</HashCode>
+      <HashCode>AAAAAAQAAAAAAAEAAAAACAABAAAAAEABAAAABgAAQAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Olio_ohjelmointi_projekti.Game">
     <Position X="7" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAgAAAIAACAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAAgAAAIBICAAAAAAAAAAAACQAAAQAAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -36,31 +36,38 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Olio_ohjelmointi_projekti.Shop.Item" Collapsed="true">
-    <Position X="10.25" Y="8" Width="1.5" />
+    <Position X="10.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Shop\Item.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Olio_ohjelmointi_projekti.Shop.Potion" Collapsed="true">
-    <Position X="11.75" Y="8.75" Width="1.5" />
+    <Position X="11.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Shop\Potion.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Olio_ohjelmointi_projekti.Shop.Sword" Collapsed="true">
-    <Position X="8.75" Y="8.75" Width="1.5" />
+    <Position X="9" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Shop\Sword.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Olio_ohjelmointi_projekti.Inventory">
-    <Position X="2.75" Y="11.75" Width="1.5" />
+    <Position X="2.75" Y="12.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAACAAAAAAEAAAAgAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAACAAAAAAEAAAAgAAAAAgAAAAAAEAAAAAAAAAAA=</HashCode>
       <FileName>Inventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Olio_ohjelmointi_projekti.Shop.Store" Collapsed="true">
+    <Position X="10.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Shop\Store.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
