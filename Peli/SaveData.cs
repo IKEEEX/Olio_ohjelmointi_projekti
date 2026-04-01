@@ -1,9 +1,10 @@
+using Olio_ohjelmointi_projekti.Hahmot;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 
-namespace Olio_ohjelmointi_projekti
+namespace Olio_ohjelmointi_projekti.Peli
 {
     public class SaveData
     {

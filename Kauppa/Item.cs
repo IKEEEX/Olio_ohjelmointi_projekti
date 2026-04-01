@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Olio_ohjelmointi_projekti.Shop
+namespace Olio_ohjelmointi_projekti.Kauppa
 {
     public class Item
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Olio_ohjelmointi_projekti
+namespace Olio_ohjelmointi_projekti.Hahmot
 {
     public abstract class Character
     {

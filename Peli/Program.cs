@@ -1,7 +1,7 @@
-﻿using Olio_ohjelmointi_projekti.Shop;
+﻿using Olio_ohjelmointi_projekti.Kauppa;
 using System.Net.Http.Headers;
 
-namespace Olio_ohjelmointi_projekti
+namespace Olio_ohjelmointi_projekti.Peli
 {
     internal class Program
     {

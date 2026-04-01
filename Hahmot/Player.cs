@@ -1,10 +1,10 @@
-﻿using Olio_ohjelmointi_projekti.Shop;
+﻿using Olio_ohjelmointi_projekti.Kauppa;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace Olio_ohjelmointi_projekti
+namespace Olio_ohjelmointi_projekti.Hahmot
 {
     public class Player : Character
     {

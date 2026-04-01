@@ -1,10 +1,11 @@
-﻿using Olio_ohjelmointi_projekti.Shop;
+﻿using Olio_ohjelmointi_projekti.Hahmot;
+using Olio_ohjelmointi_projekti.Kauppa;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Olio_ohjelmointi_projekti
+namespace Olio_ohjelmointi_projekti.Peli
 {
     class Game
     {

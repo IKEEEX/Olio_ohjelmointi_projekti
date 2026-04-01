@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Olio_ohjelmointi_projekti;
+using Olio_ohjelmointi_projekti.Hahmot;
 
-namespace Olio_ohjelmointi_projekti.Shop
+namespace Olio_ohjelmointi_projekti.Kauppa
 {
     public class Potion : Item, IUsable
     {

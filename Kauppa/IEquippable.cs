@@ -1,6 +1,6 @@
-using Olio_ohjelmointi_projekti;
+using Olio_ohjelmointi_projekti.Hahmot;
 
-namespace Olio_ohjelmointi_projekti.Shop
+namespace Olio_ohjelmointi_projekti.Kauppa
 {
     public interface IEquippable
     {
