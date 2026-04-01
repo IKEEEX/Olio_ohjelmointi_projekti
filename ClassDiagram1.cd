@@ -17,7 +17,7 @@
   <Class Name="Olio_ohjelmointi_projekti.Player">
     <Position X="2.75" Y="9" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAQAAAAAAAEAAAAACAABAAAAAEABAAAABgAAQAA=</HashCode>
+      <HashCode>AAAAAAQAAABAAAAAAAAACAABAAAAAEABAAAABgAAQAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -72,29 +72,29 @@
       <FileName>Shop\Store.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Olio_ohjelmointi_projekti.SaveData" Collapsed="true">
-    <Position X="4.75" Y="2" Width="1.5" />
+  <Class Name="Olio_ohjelmointi_projekti.SaveData">
+    <Position X="3.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
       <FileName>SaveData.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Olio_ohjelmointi_projekti.PlayerData" Collapsed="true">
-    <Position X="4.75" Y="1.25" Width="1.5" />
+  <Class Name="Olio_ohjelmointi_projekti.PlayerData">
+    <Position X="2" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAAAACAAAAAAACAQAAAAAAAABAAAABgAAQAA=</HashCode>
       <FileName>SaveData.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Olio_ohjelmointi_projekti.ItemData" Collapsed="true">
-    <Position X="4.75" Y="0.5" Width="1.5" />
+  <Class Name="Olio_ohjelmointi_projekti.ItemData">
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAACAAQAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>SaveData.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Olio_ohjelmointi_projekti.SaveLoad" Collapsed="true">
-    <Position X="4.75" Y="2.75" Width="1.5" />
+  <Class Name="Olio_ohjelmointi_projekti.SaveLoad">
+    <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>SaveData.cs</FileName>
