@@ -20,8 +20,8 @@ namespace Olio_ohjelmointi_projekti.Kauppa
                 // Simpppeli UI kauppaan.
                 Console.WriteLine("\n=== SHOP ===");
                 Console.WriteLine($"You have {player.Coins} coins");
-                Console.WriteLine($"1 = Health potion {potion.Price}");
-                Console.WriteLine($"2 = Goblin slayer {sword.Price}");
+                Console.WriteLine($"1 = Health potion ({potion.Price})");
+                Console.WriteLine($"2 = Goblin slayer ({sword.Price})");
                 Console.WriteLine("3 = Exit");
 
                 string choice = Console.ReadLine();
