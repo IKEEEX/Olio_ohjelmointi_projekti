@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+// Abstrakti luokka joka antaa olioille perus arvoja 
+
 namespace Olio_ohjelmointi_projekti.Hahmot
 {
     public abstract class Character

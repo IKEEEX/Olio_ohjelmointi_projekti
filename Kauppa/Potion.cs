@@ -8,6 +8,7 @@ namespace Olio_ohjelmointi_projekti.Kauppa
     public class Potion : Item, IUsable
     {
         public int HealAmount { get; set; }
+
         public Potion(string name) : base(name, 20)
         {
             HealAmount = 20;

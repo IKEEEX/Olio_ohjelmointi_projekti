@@ -6,6 +6,7 @@ using System.Linq;
 
 namespace Olio_ohjelmointi_projekti.Hahmot
 {
+    // Pelin sankarin luokka. Träckkää leveliä, XP:tä, rahaa ja inventoryä.
     public class Player : Character
     {
         public int Level { get; set; }
@@ -38,6 +39,7 @@ namespace Olio_ohjelmointi_projekti.Hahmot
                 LevelUp();
             }
         }
+
         public void LevelUp()
         {
             Level++;
@@ -47,6 +49,7 @@ namespace Olio_ohjelmointi_projekti.Hahmot
             Health = MaxHealth;
             Console.WriteLine($"{Name} reached a new level: {Level}!");
         }
+        // Etsii ensimmäisen health potionin invistä
         public bool UseFirstPotion()
         {
             Item potion = Inventory.items.FirstOrDefault(i => i is Potion && i.Name == "Health potion");
@@ -66,6 +69,8 @@ namespace Olio_ohjelmointi_projekti.Hahmot
 
             return false;
         }
+
+        // Näyttää invin ja antaa pelaajalle mahdollisuuden käyttää tai ottaa itemin käyttöön.
         public void UseItem()
         {
             Inventory.ShowItems();

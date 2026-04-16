@@ -17,6 +17,7 @@ namespace Olio_ohjelmointi_projekti.Kauppa
                 Potion potion = new Potion("Health potion");
                 Sword sword = new Sword("Goblin slayer", 18);
 
+                // Simpppeli UI kauppaan.
                 Console.WriteLine("\n=== SHOP ===");
                 Console.WriteLine($"You have {player.Coins} coins");
                 Console.WriteLine($"1 = Health potion {potion.Price}");

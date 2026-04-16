@@ -17,7 +17,7 @@ namespace Olio_ohjelmointi_projekti.Kauppa
         public void Equip(Player player)
         {
             player.AttackPower = Damage;
-            Console.WriteLine($"{player.Name} equipped {Name}).");
+            Console.WriteLine($"{player.Name} equipped {Name} (Attack set to {Damage}).");
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using Olio_ohjelmointi_projekti.Hahmot;
+﻿// Pelin päälooppi ja pelin logiikka. Pelaajan luominen, vihollisten generointi,
+// taisteluiden pyörittäminen ja päävalikon näyttäminen.
+using Olio_ohjelmointi_projekti.Hahmot;
 using Olio_ohjelmointi_projekti.Kauppa;
 using System;
 using System.Collections.Generic;
@@ -13,8 +15,11 @@ namespace Olio_ohjelmointi_projekti.Peli
         private Store _store;
         private bool _isRunning = true;
         private int _enemyLevel = 1;
+
+        // Randomi lukugeneroija, käytetään vihollisten leveleihin ja hyökkäysrollien tekoon.
         private Random random = new Random();
 
+        // Aloittaa pelin loopin ja luo pelaajan.
         public void Start()
         {
             Console.Write("What will be your hero's name?: ");
@@ -29,6 +34,7 @@ namespace Olio_ohjelmointi_projekti.Peli
                 ShowMainMenu();
             }
         }
+        // Luo vihollisen, jonka taso riippuu pelaajan tasosta.
         private Enemy GenerateEnemy()
         {
             int variation = random.Next(-1, 2);
@@ -37,6 +43,7 @@ namespace Olio_ohjelmointi_projekti.Peli
             return new Enemy("Goblin", level);
         }
 
+        // Taistulun logiikka.
         private void StartBattle()
         {
             Enemy enemy = GenerateEnemy();
