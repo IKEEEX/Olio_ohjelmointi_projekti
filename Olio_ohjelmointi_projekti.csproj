@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Kauppa\Hahmot\" />
+    <Compile Remove="Kauppa\Hahmot\**" />
+    <EmbeddedResource Remove="Kauppa\Hahmot\**" />
+    <None Remove="Kauppa\Hahmot\**" />
   </ItemGroup>
 
 </Project>
