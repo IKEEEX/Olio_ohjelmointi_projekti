@@ -96,5 +96,17 @@ namespace Olio_ohjelmointi_projekti.Hahmot
                 }
             }
         }
+
+        public override int Attack()
+        {
+            int damage = base.Attack(); // perityn Character luokan "satunnainen" laskenta Attack:lle
+
+            if (random.NextDouble() < 0.10) // 10% tsäänssi tupla damageen
+            {
+                Console.WriteLine("Critical hit!");
+                damage *= 2;
+            }
+            return damage;
+        }
     }
 }
