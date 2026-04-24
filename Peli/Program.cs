@@ -5,7 +5,7 @@ namespace Olio_ohjelmointi_projekti.Peli
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Game game = new Game();
             game.Start();
